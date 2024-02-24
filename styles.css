@@ -1,0 +1,136 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, figure {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set a background color and font for the body */
+body {
+    background-color: #f8f8f8;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Style the navigation */
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav a{
+    color: #dc3545;
+}
+
+/* Style the main content area */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative; /* Added position for footer spacing */
+}
+
+/* Style the tabs container */
+.tabs-container {
+    background-color: #f0f0f0; /* Add a background color for better contrast */
+    border-radius: 8px;
+    overflow: hidden; /* Ensure content inside tabs does not overflow */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Style the individual tabs */
+.tab {
+    display: none;
+    padding: 20px;
+}
+
+/* Display the first tab by default */
+.tab.active {
+    display: block;
+}
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style the form elements */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; /* Adjusted label color for better visibility */
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: sticky;
+    bottom: 20px;
+}
+
+/* Style the list of patient requests */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}

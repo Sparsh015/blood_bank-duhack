@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Requests - Blood Donation System</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #ff6f61;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        header nav a:hover {
+            color: black;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .patient-request-form {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .patient-request-form h2 {
+            color: #ff6f61;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .patient-request-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .patient-request-form button {
+            background-color: #ff6f61;
+            color: #ffffff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .patient-requests-list {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .patient-requests-list h2 {
+            color: #ff6f61;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .patient-requests-list ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .patient-requests-list li {
+            color: #ff6f61;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            background-color: #ff6f61;
+            color: #ffffff;
+            text-align: center;
+            padding: 1.75rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        /* Ensure responsive behavior for smaller screens */
+        @media only screen and (max-width: 768px) {
+            body {
+                /* Add responsive styles here */
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <h1>Patient Requests</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donor-registration.html">Donor Registration</a></li>
+                <li><a href="blood-bank-information.html">Blood Bank Information</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <!-- Patient request form -->
+    <section class="patient-request-form">
+        <h2>Submit a Patient Request</h2>
+        <form>
+            <!-- Form fields go here -->
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <!-- Display list of current patient requests -->
+    <section class="patient-requests-list">
+        <h2>Current Patient Requests</h2>
+        <ul>
+            <li>Patient Request 1 - Urgent</li>
+            <li>Patient Request 2 - Regular</li>
+            <!-- Add more as needed -->
+        </ul>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Blood Donation System</p>
+    </div>
+</footer>
+</body>
+
+</html>

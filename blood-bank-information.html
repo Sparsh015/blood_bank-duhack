@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Bank Information - Blood Donation System</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #ff6f61;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out; /* Adding transition for smooth color change */
+        }
+
+        header nav a:hover {
+            color: #ff7e5f;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .blood-bank-information-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .blood-bank-information-section .section-title {
+            color: #ff6f61;
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            cursor: pointer;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .blood-bank-card {
+            background-color: #fff4e6;
+            border: 1px solid #ff6f61;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 20px;
+            text-align: left;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Adding transitions for smooth hover effects */
+        }
+
+        .blood-bank-card:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .blood-bank-card h3 {
+            color: #ff6f61;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .blood-bank-card p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        footer {
+            background-color: #ff6f61;
+            color: #ffffff;
+            text-align: center;
+            padding: 1.5rem 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Blood Bank Information</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="donor-registration.html">Register as Donor</a></li>
+                <li><a href="patient-requests.html">Patient Requests</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <section class="blood-bank-information-section">
+        <h2 class="section-title" onclick="toggleSection('blood-bank-information-section')">Find a Blood Bank Near You</h2>
+
+        <!-- Example Blood Bank Card -->
+        <div class="blood-bank-card">
+            <h3>Blood Bank Name</h3>
+            <p>Location: City, Country</p>
+            <p>Contact: xxx-xxx-xxxx</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+        <p>Explore more information about blood banks in the sections above.</p>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Blood Donation System</p>
+    </div>
+</footer>
+</body>
+</html>

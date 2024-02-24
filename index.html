@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation System</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #ff6f61;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        header nav a:hover {
+            color: black;
+        }
+
+        main {
+            padding: 2rem 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(255, 111, 97, 0.5), rgba(255, 111, 97, 0.5)), url('hero_image.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 0;
+        }
+
+        .hero-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: #ffffff;
+            color: #ff6f61;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff6f61;
+            color: #fff;
+        }
+
+        .about-section {
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .about-section h2 {
+            color: #ff6f61;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .about-section p {
+            color: #ff6f61;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .about-section ul {
+            margin-bottom: 1.5rem;
+        }
+
+        .about-section ul li {
+            color: #ff6f61;
+            list-style: none;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-section .cta-button {
+            background-color: #ff6f61;
+            color: #fff;
+        }
+
+        footer {
+            background-color: #ff6f61;
+            color: #ffffff;
+            text-align: center;
+            padding: 1.75rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p:hover {
+            color: black;
+            cursor: pointer;
+        }
+
+        /* Ensure responsive behavior for smaller screens */
+        @media only screen and (max-width: 768px) {
+            body {
+                /* Add responsive styles here */
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <h1>Welcome to the Blood Donation System</h1>
+        <nav>
+            <ul>
+                <li><a href="donor-registration.html">Donor Registration</a></li>
+                <li><a href="blood-bank-information.html">Blood Bank Information</a></li>
+                <li><a href="patient-requests.html">Patient Requests</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="container">
+    <!-- Hero section -->
+    <section class="hero-section">
+        <h2>Your Donation Can Save Lives!</h2>
+        <p>Join us in the mission to make a difference. Register as a donor today.</p>
+        <a href="donor-registration.html" class="cta-button">Register Now</a>
+        <a href="contacts.html" class="cta-button">Contact-Us</a>
+    </section>
+
+    <!-- About section -->
+    <section class="about-section">
+        <h2>About Blood Donation System</h2>
+        <p>Welcome to the Blood Donation System, where every drop counts in saving lives. Our mission is to bridge the gap between generous donors and individuals in critical need of blood. By becoming a part of our community, you are contributing to a network that strives to make a meaningful impact on healthcare worldwide.</p>
+        <p>At Blood Donation System, we understand the vital role that blood donation plays in emergency situations, surgeries, and various medical treatments. Our dedicated team works tirelessly to ensure a seamless and efficient process, making it easy for donors to make a life-changing difference.</p>
+        <p>Key Features:</p>
+        <ul>
+            <li>Efficient and secure donor registration process.</li>
+            <li>Real-time updates on blood availability and requests.</li>
+            <li>Urgent and regular patient request system for quick response.</li>
+            <li>Interactive maps for locating nearby blood banks and donation centers.</li>
+        </ul>
+        <p>Your involvement matters, and together, we can create a stronger and healthier community. Learn more about our organization and the profound impact of your contribution by exploring the resources below.</p>
+        <a href="#" class="cta-button">Become a Lifesaver</a>
+    </section>
+</main>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 Blood Donation System</p>
+    </div>
+</footer>
+</body>
+
+</html>
