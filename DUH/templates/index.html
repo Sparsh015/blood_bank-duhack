@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>donor Information Form</title>
+</head>
+<body>
+    <h1>User Information Form</h1>
+    <form action="{{ url_for('submit') }}" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age"><br>
+        
+        <label for="blood_group">Blood Group:</label><br>
+        <input type="text" id="blood_group" name="blood_group"><br>
+        
+        <label for="diseases">Diseases:</label><br>
+        <input type="text" id="diseases" name="diseases"><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
