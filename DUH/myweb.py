@@ -21,7 +21,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/need')
-def index_need():
+def need():
     return render_template('need.html')
 
 @app.route('/submit', methods=['POST'])
@@ -46,26 +46,41 @@ def submit():
     except mysql.connector.Error as e:
         return "An error occurred: {e}"
 
-@app.route('/check_blood_group/<blood_group>')
-def check_blood_group(blood_group):
+@app.route('/check_blood')
+def check_blood():
+    return render_template('check_blood.html')
+
+@app.route('/check', methods=['POST'])
+def check():
+    # Retrieve form data
+    name = request.form['name']
+    age = int(request.form['age'])
+    blood_group = request.form['blood_group']
+    diseases = request.form['diseases']
+
     try:
         # Check if blood group is available in the database
         conn = get_db_connection()
         cursor = conn.cursor(dictionary=True)
+        
         cursor.execute("SELECT * FROM user_info WHERE blood_group = %s", (blood_group,))
         donor_info = cursor.fetchone()
         cursor.close()
         conn.close()
 
         if donor_info:
-            return jsonify(donor_info)  # Return donor information if available
+            # If donors are found, redirect to blood availability page
+            return redirect(url_for('blood_availability', 
+                                    name=name, 
+                                    age=age, 
+                                    blood_group=blood_group, 
+                                    diseases=diseases))
         else:
-            return jsonify({'message': 'Blood group not available'})
+            # If no donors are found, redirect back to index page or show a message
+            return redirect(url_for('check_blood'))
 
     except mysql.connector.Error as e:
-        return jsonify({'message': f"An error occurred: {e}"})
-
-
+        return "An error occurred: {e}"
 
 
 if __name__ == '__main__':
